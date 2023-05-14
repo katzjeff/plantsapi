@@ -1,7 +1,9 @@
 const express = require("express");
 const data = require("./data.json");
+const PORT = process.env.PORT || 3000;
 
 const app = express();
+// app.use(express.json)
 
 // Endpoint to get all plants/flowers
 app.get("/plants", (req, res) => {
@@ -15,18 +17,16 @@ app.get("/plants/:id", (req, res) => {
   if (plant) {
     res.json(plant);
   } else {
-    res
-      .status(404)
-      .json({
-        message: `No such plant with Id ${id}. Please create one using the link below.`,
-      });
+    res.status(404).json({
+      message: `No such plant with Id ${id}. Please create one using the link below.`,
+    });
   }
   //add a link so that one can add/create a new plant if they don't find what they are looking for
 });
 
 // Endpoint to filter plants/flowers by color
 app.get("/plants", (req, res) => {
-  const color = req.query.flower_color;
+  const color = req.query.flower_colors;
   const filteredData = data.filter((p) => p.flower_colors.includes(color));
   res.json(filteredData);
 });
@@ -56,7 +56,15 @@ app.get("/plants", (req, res) => {
   res.json(filteredData);
 });
 
+// Error handling middleware
+// app.use((err, req, res, next) => {
+//   console.error(err.stack);
+//   const status = err.status || 500;
+//   const message = err.message || 'Internal Server Error';
+//   res.status(status).json({ error: message });
+// });
+
 // Start the server
-app.listen(3000, () => {
-  console.log("Server started on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
