@@ -24,6 +24,30 @@ app.get("/plants/:id", (req, res) => {
   //add a link so that one can add/create a new plant if they don't find what they are looking for
 });
 
+//Create a new plant/flower
+
+app.post("/plants", (req, res) => {
+  const plant = new plant({
+    id: req.body.id,
+    plant_name: req.body.plant_name,
+    food_element: req.body.food_element,
+    blooming_times: req.body.blooming_times,
+    flower_colors: req.body.flower_colors,
+    water_needs: req.body.water_needs,
+    plant_height: req.body.plant_height,
+    native_region: req.body.native_region,
+    companion_plants: req.body.companion_plants,
+  });
+
+  plant.save((err, plant) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(plant);
+    }
+  });
+});
+
 // Endpoint to filter plants/flowers by color
 app.get("/plants", (req, res) => {
   const color = req.query.flower_colors;
