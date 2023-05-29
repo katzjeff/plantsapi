@@ -25,7 +25,6 @@ app.get("/plants/:id", (req, res) => {
 });
 
 //Create a new plant/flower
-
 app.post("/plants", (req, res) => {
   const plant = new plant({
     id: req.body.id,
