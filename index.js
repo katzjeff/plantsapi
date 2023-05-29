@@ -1,9 +1,24 @@
 const express = require("express");
 const data = require("./data.json");
+require("dotenv").config()
+
 const PORT = process.env.PORT || 3000;
 
 const app = express();
 // app.use(express.json)
+
+//Error function
+function error(res, status, message, code) {
+
+  res.status(status).json({
+    error: {
+      message: message,
+      code: code,
+    },
+  });
+  res.send("Internal Server Error")
+}
+  
 
 // Endpoint to get all plants/flowers
 app.get("/plants", (req, res) => {
@@ -78,6 +93,9 @@ app.get("/plants", (req, res) => {
   });
   res.json(filteredData);
 });
+
+
+app.use(error)
 
 // Error handling middleware
 // app.use((err, req, res, next) => {
