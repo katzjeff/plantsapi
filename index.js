@@ -1,111 +1,136 @@
 const express = require("express");
-const data = require("./data.json");
-require("dotenv").config()
-
-const PORT = process.env.PORT || 3000;
+const bodyParser = require("body-parser");
+const fs = require("fs");
+const port = process.env.PORT || 5000;
+// require("dotenv").config();
 
 const app = express();
-// app.use(express.json)
+app.use(bodyParser.json());
 
-//Error function
-function error(res, status, message, code) {
-
-  res.status(status).json({
-    error: {
-      message: message,
-      code: code,
-    },
-  });
-  res.send("Internal Server Error")
-}
-  
-
-// Endpoint to get all plants/flowers
+// Get all plants
 app.get("/plants", (req, res) => {
-  res.json(data);
-});
-
-// Endpoint to get a specific plant/flower by ID
-app.get("/plants/:id", (req, res) => {
-  const id = req.params.id;
-  const plant = data.find((p) => p.id === id);
-  if (plant) {
-    res.json(plant);
-  } else {
-    res.status(404).json({
-      message: `No such plant with Id ${id}. Please create one using the link below.`,
-    });
-  }
-  //add a link so that one can add/create a new plant if they don't find what they are looking for
-});
-
-//Create a new plant/flower
-app.post("/plants", (req, res) => {
-  const plant = new plant({
-    id: req.body.id,
-    plant_name: req.body.plant_name,
-    food_element: req.body.food_element,
-    blooming_times: req.body.blooming_times,
-    flower_colors: req.body.flower_colors,
-    water_needs: req.body.water_needs,
-    plant_height: req.body.plant_height,
-    native_region: req.body.native_region,
-    companion_plants: req.body.companion_plants,
-  });
-
-  plant.save((err, plant) => {
+  fs.readFile("plants.json", "utf8", (err, data) => {
     if (err) {
-      res.send(err);
-    } else {
-      res.send(plant);
+      console.error(err);
+      res.status(500).json({ error: "Failed to read the plants data." });
+      return;
+    }
+    try {
+      const plants = JSON.parse(data).plants;
+      res.json(plants);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Failed to parse the plants data." });
     }
   });
 });
 
-// Endpoint to filter plants/flowers by color
-app.get("/plants", (req, res) => {
-  const color = req.query.flower_colors;
-  const filteredData = data.filter((p) => p.flower_colors.includes(color));
-  res.json(filteredData);
-});
-
-// Endpoint to filter plants/flowers by season
-app.get("/plants", (req, res) => {
-  const season = req.query.season;
-  const filteredData = data.filter((p) => p.blooming_times.includes(season));
-  res.json(filteredData);
-});
-
-// Endpoint to filter plants/flowers by water needs
-app.get("/plants", (req, res) => {
-  const water = req.query.water;
-  const filteredData = data.filter((p) => p.water_needs === water);
-  res.json(filteredData);
-});
-
-// Endpoint to filter plants/flowers by height range
-app.get("/plants", (req, res) => {
-  const height = req.query.height;
-  const [minHeight, maxHeight] = height.split("-").map((h) => parseInt(h));
-  const filteredData = data.filter((p) => {
-    const [min, max] = p.plant_height.split("-").map((h) => parseInt(h));
-    return min >= minHeight && max <= maxHeight;
+// Get a specific plant by ID
+app.get("/plants/:id", (req, res) => {
+  const plantId = parseInt(req.params.id);
+  fs.readFile("plants.json", "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ error: "Failed to read the plants data." });
+      return;
+    }
+    try {
+      const plants = JSON.parse(data).plants;
+      const plant = plants.find((p) => p.id === plantId);
+      if (!plant) {
+        res.status(404).json({ error: "Plant not found." });
+        return;
+      }
+      res.json(plant);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Failed to parse the plants data." });
+    }
   });
-  res.json(filteredData);
 });
 
+// Search plants by flower color, water requirements, native region, companion plants, or blooming times
+app.get("/plants/search", (req, res) => {
+  const { color, water, region, companion, blooming } = req.query;
+  fs.readFile("plants.json", "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ error: "Failed to read the plants data." });
+      return;
+    }
+    try {
+      let plants = JSON.parse(data).plants;
 
-app.use(error)
+      if (color) {
+        plants = plants.filter(
+          (p) => p.flowerColor.toLowerCase() === color.toLowerCase()
+        );
+      }
+      if (water) {
+        plants = plants.filter(
+          (p) => p.waterRequirements.toLowerCase() === water.toLowerCase()
+        );
+      }
+      if (region) {
+        plants = plants.filter(
+          (p) => p.nativeRegion.toLowerCase() === region.toLowerCase()
+        );
+      }
+      if (companion) {
+        plants = plants.filter((p) => p.companionPlants.includes(companion));
+      }
+      if (blooming) {
+        plants = plants.filter((p) => p.bloomingTimes.includes(blooming));
+      }
 
-// Error handling middleware
-// app.use((err, req, res, next) => {
-//   console.error(err.stack);
-//   const status = err.status || 500;
-//   const message = err.message || 'Internal Server Error';
-//   res.status(status).json({ error: message });
-// });
+      res.json(plants);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Failed to parse the plants data." });
+    }
+  });
+});
+
+// Create a new plant
+app.post("/plants", (req, res) => {
+  const { plant } = req.body;
+  if (!plant) {
+    res.status(400).json({ error: "Invalid request. Plant data is missing." });
+    return;
+  }
+
+  fs.readFile("plants.json", "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+      res.status(500).json({ error: "Failed to read the plants data." });
+      return;
+    }
+    try {
+      const plants = JSON.parse(data).plants;
+      const newPlant = { id: plants.length + 1, ...plant };
+      plants.push(newPlant);
+
+      fs.writeFile("plants.json", JSON.stringify({ plants }), (err) => {
+        if (err) {
+          console.error(err);
+          res.status(500).json({ error: "Failed to update the plants data." });
+          return;
+        }
+        res.status(201).json(newPlant);
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: "Failed to parse the plants data." });
+    }
+  });
+});
+
+// Handle errors for invalid routes
+app.use((req, res) => {
+  res.status(404).json({ error: "Endpoint not found." });
+});
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server started on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`API server is running on port ${port}`);
 });
