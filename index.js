@@ -4,26 +4,14 @@ const fs = require("fs");
 const port = process.env.PORT || 5000;
 // require("dotenv").config();
 
+import allPlants from "./routes/allPlants.js"
+
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Get all plants
-app.get("/plants", (req, res) => {
-  fs.readFile("plants.json", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ error: "Failed to read the plants data." });
-      return;
-    }
-    try {
-      const plants = JSON.parse(data).plants;
-      res.json(plants);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Failed to parse the plants data." });
-    }
-  });
-});
+app.use("/plants", allPlants)
 
 // Get a specific plant by ID
 app.get("/plants/:id", (req, res) => {

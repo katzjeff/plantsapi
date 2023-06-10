@@ -1,0 +1,1 @@
+//route used to search all the plants in the database based on various parameters
