@@ -1,42 +1,44 @@
-import express from "express"
+import express from "express";
 import bodyParser from "body-parser";
-import fs from "fs"
+import fs from "fs";
 
 const port = process.env.PORT || 5000;
 // require("dotenv").config();
 
-import allPlants from "./routes/allPlants.js"
+import allPlants from "./routes/allPlants.js";
+import singlePlant from "./routes/singlePlant.js";
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Get all plants
-app.use("/plants", allPlants)
+app.use("/plants", allPlants);
 
 // Get a specific plant by ID
-app.get("/plants/:id", (req, res) => {
-  const plantId = parseInt(req.params.id);
-  fs.readFile("plants.json", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ error: "Failed to read the plants data." });
-      return;
-    }
-    try {
-      const plants = JSON.parse(data).plants;
-      const plant = plants.find((p) => p.id === plantId);
-      if (!plant) {
-        res.status(404).json({ error: "Plant not found." });
-        return;
-      }
-      res.json(plant);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Failed to parse the plants data." });
-    }
-  });
-});
+app.use("/plants/:id", singlePlant);
+// app.get("/plants/:id", (req, res) => {
+//   const plantId = parseInt(req.params.id);
+//   fs.readFile("plants.json", "utf8", (err, data) => {
+//     if (err) {
+//       console.error(err);
+//       res.status(500).json({ error: "Failed to read the plants data." });
+//       return;
+//     }
+//     try {
+//       const plants = JSON.parse(data).plants;
+//       const plant = plants.find((p) => p.id === plantId);
+//       if (!plant) {
+//         res.status(404).json({ error: "Plant not found." });
+//         return;
+//       }
+//       res.json(plant);
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json({ error: "Failed to parse the plants data." });
+//     }
+//   });
+// });
 
 // Search plants by flower color, water requirements, native region, companion plants, or blooming times
 app.get("/plants/search", (req, res) => {
