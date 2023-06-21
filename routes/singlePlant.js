@@ -4,6 +4,6 @@ import { singlePlant } from "../controllers/singlePlantID.js";
 
 const router = Router();
 
-router.get("/", singlePlant);
+router.get("/:id", singlePlant);
 
 export default router;

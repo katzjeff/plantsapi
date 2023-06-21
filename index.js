@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use("/plants", allPlants);
 
 // Get a specific plant by ID
-app.use("/plants/:id", singlePlant);
+app.use("/plants/", singlePlant);
 // app.get("/plants/:id", (req, res) => {
 //   const plantId = parseInt(req.params.id);
 //   fs.readFile("plants.json", "utf8", (err, data) => {
