@@ -1,6 +1,7 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const fs = require("fs");
+import express from "express"
+import bodyParser from "body-parser";
+import fs from "fs"
+
 const port = process.env.PORT || 5000;
 // require("dotenv").config();
 
