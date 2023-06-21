@@ -1,6 +1,6 @@
-//provides a list of all the plants in the db
+
 import { Router } from "express";
-import { getPlants } from "../controllers/allPlantsController";
+import { getPlants } from "../controllers/allPlantsController.js";
 
 const router = Router();
 

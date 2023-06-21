@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import Plants from "../models/allPlantsModel.js"
+// import Plants from "../models/allPlantsModel.js"
 export const getPlants = (req, res) => {
     fs.readFile("plants.json", "utf8", (err, data) => {
         if (err) {
