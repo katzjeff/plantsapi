@@ -5,6 +5,6 @@ import { searchPlants } from "../controllers/searchPlants.js";
 
 const router = Router();
 
-router.get("/plants/search", searchPlants);
+router.get("/search", searchPlants);
 
 export default router;

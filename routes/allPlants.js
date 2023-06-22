@@ -5,6 +5,4 @@ const router = Router();
 
 router.get("/", getPlants);
 
-// app.post("/", postPlants);
-
 export default router;

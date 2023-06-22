@@ -107,7 +107,7 @@ export const createPlant = (req, res) => {
             console.error(err);
             return res
               .status(500)
-              .json({ error: "Failed to write the new plant data." });
+              .json({ error: "Failed to write the new plant to the database.Please check the data you tried adding." });
           }
 
           res.status(201).json(newPlant);
@@ -116,6 +116,6 @@ export const createPlant = (req, res) => {
     });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Failed to create the new plant." });
+    res.status(500).json({ error: "Sorry, I wasn't able to create the new plant." });
   }
 };

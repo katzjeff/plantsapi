@@ -19,8 +19,3 @@ export const getPlants = (req, res) => {
   });
 };
 
-// export const postPlants = (req, res, next ) => {
-//   res.status(200).json({
-//     message: "Plant Created",
-//   });
-// };

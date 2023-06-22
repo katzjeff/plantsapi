@@ -15,7 +15,9 @@ export const singlePlant = async (req, res) => {
     const plant = plants.find((p) => p.id === plantId);
 
     if (!plant) {
-      res.status(404).json({ error: "Plant not found." });
+      res.status(404).json({
+        error: `Sorry, no plant with ID ${plantId} , was found. Please try another ID, or create a new plant/flower.`,
+      });
       return;
     }
 
