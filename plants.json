@@ -101,6 +101,24 @@
                 "cm": 70,
                 "in": 28
             }
+        },
+        {
+            "id": "2245e7ee-911b-4d3f-814c-72897649fad0",
+            "plantName": "TestPlant",
+            "flowerColor": "Green-Yellow",
+            "waterRequirements": "medium",
+            "nativeRegion": "kenya",
+            "companionPlants": "sunflower, beens",
+            "bloomingTimes": "annual"
+        },
+        {
+            "id": "e1eeb5da-d9c4-45e8-8ded-36c52f27c468",
+            "plantName": "sagaa",
+            "flowerColor": "white",
+            "waterRequirements": "medium",
+            "nativeRegion": "kenya",
+            "companionPlants": "sunflower, beens",
+            "bloomingTimes": "annual"
         }
     ]
 }

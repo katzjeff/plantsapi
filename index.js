@@ -8,6 +8,7 @@ const port = process.env.PORT || 5000;
 import allPlants from "./routes/allPlants.js";
 import singlePlant from "./routes/singlePlant.js";
 import searchPlants from "./routes/searchPlant.js";
+import createPlant from "./routes/createNewPlant.js"
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,38 +24,39 @@ app.use("/plants/", singlePlant);
 app.use("/plants/", searchPlants);
 
 // Create a new plant
-app.post("/", (req, res) => {
-  const { plant } = req.body;
-  if (!plant) {
-    res.status(400).json({ error: "Invalid request. Plant data is missing." });
-    return;
-  }
+app.use("/plants/", createPlant)
+// app.post("/", (req, res) => {
+//   const { plant } = req.body;
+//   if (!plant) {
+//     res.status(400).json({ error: "Invalid request. Plant data is missing." });
+//     return;
+//   }
 
-  fs.readFile("plants.json", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      res.status(500).json({ error: "Failed to read the plants data." });
-      return;
-    }
-    try {
-      const plants = JSON.parse(data).plants;
-      const newPlant = { id: plants.length + 1, ...plant };
-      plants.push(newPlant);
+//   fs.readFile("plants.json", "utf8", (err, data) => {
+//     if (err) {
+//       console.error(err);
+//       res.status(500).json({ error: "Failed to read the plants data." });
+//       return;
+//     }
+//     try {
+//       const plants = JSON.parse(data).plants;
+//       const newPlant = { id: plants.length + 1, ...plant };
+//       plants.push(newPlant);
 
-      fs.writeFile("plants.json", JSON.stringify({ plants }), (err) => {
-        if (err) {
-          console.error(err);
-          res.status(500).json({ error: "Failed to update the plants data." });
-          return;
-        }
-        res.status(201).json(newPlant);
-      });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Failed to parse the plants data." });
-    }
-  });
-});
+//       fs.writeFile("plants.json", JSON.stringify({ plants }), (err) => {
+//         if (err) {
+//           console.error(err);
+//           res.status(500).json({ error: "Failed to update the plants data." });
+//           return;
+//         }
+//         res.status(201).json(newPlant);
+//       });
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json({ error: "Failed to parse the plants data." });
+//     }
+//   });
+// });
 
 // Handle errors for invalid routes
 app.use((req, res) => {
