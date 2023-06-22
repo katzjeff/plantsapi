@@ -55,6 +55,25 @@ export const createPlant = (req, res) => {
       // Parse the JSON data
       const existingPlants = JSON.parse(data).plants;
 
+      //Check for plant/flower duplication using the following attributes
+
+      const duplicatePlant = existingPlants.find(
+        (plant) =>
+          plant.plantName.toLowerCase() === plantName.toLowerCase() &&
+          plant.flowerColor.toLowerCase() === flowerColor.toLowerCase() &&
+          plant.waterRequirements.toLowerCase() ===
+            waterRequirements.toLowerCase() &&
+          plant.nativeRegion.toLowerCase() === nativeRegion.toLowerCase()
+      );
+      if (duplicatePlant) {
+        return res
+          .status(409)
+          .json({
+            error:
+              "A plant with similar features exists, please check or create a new plant/flower.",
+          });
+      }
+
       //Generate a custom id based on the current db
       const maxId = existingPlants.reduce(
         (max, plant) => (plant.id > max ? plant.id : max),
