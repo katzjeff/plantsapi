@@ -9,25 +9,14 @@ GET: Search All Plants
 ```
 GET: Search for specific plant with ID
 ```bash
-/plants/id
+/plants/:id
 ```
-
-GET: Query using color parameter
+GET: Search for plants/flowers using other attributes
 ```bash
-/plants?color=Purple
+/plants/search
 ```
-
-GET: Query using season parameter
+POST: Create a new plant/flower
 ```bash
-/plants?season=summer
-```
+/plants
 
-GET: Query using water needs
-```bash
-/plants?water=Moderate
-```
-
-GET: Plants Height
-```bash
-/plants?height=12-24
 ```
