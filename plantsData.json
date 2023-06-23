@@ -1,0 +1,298 @@
+{
+    "plants": [
+        {
+            "id": 1,
+            "botanicalName": "Lavandula angustifolia",
+            "name": "Lavender",
+            "description": "Aromatic perennial shrub with narrow, gray-green leaves and spikes of purple flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soliType": "Well-drained",
+                "tempRange": "50-90°F"
+            },
+            "nativeRegion": "Mediterranean",
+            "companionPlants": [
+                "Rosemary",
+                "Sage",
+                "Chives"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Lavender_in_full_bloom.JPG/1200px-Lavender_in_full_bloom.JPG",
+            "plantHeight": "2-3 feet"
+        },
+        {
+            "id": 2,
+            "botanicalName": "Rosa rugosa",
+            "name": "Rose",
+            "description": "Shrub with prickly stems and fragrant flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring, Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soliType": "Well-drained",
+                "tempRange": "35-95°F"
+            },
+            "nativeRegion": "Northeast Asia",
+            "companionPlants": [
+                "Lavender",
+                "Sage",
+                "Chives"
+            ],
+            "flowerColor": "Red, pink, yellow, white",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Rosa_rugosa_flower.jpg/1200px-Rosa_rugosa_flower.jpg",
+            "plantHeight": "3-6 feet"
+        },
+        {
+            "id": 3,
+            "botanicalName": "Zinnia elegans",
+            "name": "Zinnia",
+            "description": "Annual with daisy-like flowers in a variety of colors.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer, Fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soliType": "Well-drained",
+                "tempRange": "40-90°F"
+            },
+            "nativeRegion": "Mexico",
+            "companionPlants": [
+                "Sunflowers",
+                "Marigolds",
+                "Coneflowers"
+            ],
+            "flowerColor": "Yellow, orange, red, pink, white",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Zinnia_elegans.jpg/1200px-Zinnia_elegans.jpg",
+            "plantHeight": "1-2 feet"
+        },
+        {
+            "id": 4,
+            "botanicalName": "Marigold",
+            "name": "Marigold",
+            "description": "Annual with daisy-like flowers in a variety of colors.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer, Fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soliType": "Well-drained",
+                "tempRange": "40-90°F"
+            },
+            "nativeRegion": "Mexico",
+            "companionPlants": [
+                "Sunflowers",
+                "Zinnias",
+                "Coneflowers"
+            ],
+            "flowerColor": "Yellow, orange, red",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tagetes_erecta_flower.jpg/1200px-Tagetes_erecta_flower.jpg",
+            "plantHeight": "1-2 feet"
+        },
+        {
+            "id": 5,
+            "botanicalName": "Helianthus annuus",
+            "name": "Sunflower",
+            "description": "The sunflower is a tall, annual plant with large, yellow flowers. It is native to North America and is a popular garden flower. Sunflowers are a good source of pollen and nectar for bees and other pollinators.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soliType": "Well-drained",
+                "tempRange": "60-85 degrees Fahrenheit"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Coneflower",
+                "Black-eyed Susan",
+                "Zinnia"
+            ],
+            "flowerColor": "Yellow",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Helianthus_annuus_-_A_Sunflower.jpg/1200px-Helianthus_annuus_-_A_Sunflower.jpg",
+            "plantHeight": "6-12 feet"
+        },
+        {
+            "id": 6,
+            "botanicalName": "Lavandula angustifolia",
+            "name": "English lavender",
+            "description": "Aromatic shrub with narrow leaves and spikes of purple flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate water",
+                "soliType": "Well-drained soil",
+                "tempRange": "35-90°F (2-32°C)"
+            },
+            "nativeRegion": "Mediterranean",
+            "companionPlants": [
+                "Rosemary",
+                "Sage",
+                "Catmint"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lavandula_angustifolia_closeup.jpg/1200px-Lavandula_angustifolia_closeup.jpg",
+            "plantHeight": "2-3 feet (0.6-1 meter)"
+        },
+        {
+            "id": 7,
+            "botanicalName": "Pelargonium x hortorum",
+            "name": "Geranium",
+            "description": "Aromatic perennial with showy flowers in a variety of colors.",
+            "growthHabits": "Annual or perennial",
+            "floweringSeason": "Spring, summer, fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate water",
+                "soliType": "Well-drained soil",
+                "tempRange": "35-95°F (2-35°C)"
+            },
+            "nativeRegion": "South Africa",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary",
+                "Sage"
+            ],
+            "flowerColor": "Red, pink, orange, yellow, white, purple",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pelargonium_zonale_-_flower.jpg/1200px-Pelargonium_zonale_-_flower.jpg",
+            "plantHeight": "1-2 feet (0.3-0.6 meters)"
+        },
+        {
+            "id": 8,
+            "botanicalName": "Salvia officinalis",
+            "name": "Sage",
+            "description": "Perennial herb with gray-green leaves and spikes of blue, purple, or white flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate water",
+                "soliType": "Well-drained soil",
+                "tempRange": "35-95 degrees Fahrenheit"
+            },
+            "nativeRegion": "Mediterranean",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary",
+                "Catmint"
+            ],
+            "flowerColor": "Blue, purple, or white",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Salvia_officinalis_-_001.jpg/1200px-Salvia_officinalis_-_001.jpg",
+            "plantHeight": "2-3 feet"
+        },
+        {
+            "id": 9,
+            "botanicalName": "Rosa spp.",
+            "name": "Rose",
+            "description": "Roses are classic flowering plants known for their beautiful blooms and pleasant fragrance.",
+            "growthHabits": "Shrub",
+            "floweringSeason": "Spring to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Regular",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 85°F"
+            },
+            "nativeRegion": "Various regions",
+            "companionPlants": [
+                "Lavender",
+                "Geranium"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/rose.jpg",
+            "plantHeight": "1 to 8 feet"
+        },
+        {
+            "id": 10,
+            "botanicalName": "Borago officinalis",
+            "name": "Borage",
+            "description": "Borage is an annual herb with hairy leaves and star-shaped blue flowers.",
+            "growthHabits": "Annual herb",
+            "floweringSeason": "Spring to summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "55°F to 85°F"
+            },
+            "nativeRegion": "Mediterranean",
+            "companionPlants": [
+                "Tomato",
+                "Cucumber"
+            ],
+            "flowerColor": "Blue",
+            "imageUrl": "https://example.com/borage.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 11,
+            "botanicalName": "Echinacea purpurea",
+            "name": "Purple Coneflower",
+            "description": "Purple coneflower is a perennial herb with distinctive purple petals and a spiky cone-shaped center.",
+            "growthHabits": "Perennial herb",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-eyed Susan",
+                "Liatris"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/coneflower.jpg",
+            "plantHeight": "2 to 5 feet"
+        },
+        {
+            "id": 12,
+            "botanicalName": "Salvia splendens",
+            "name": "Scarlet Sage",
+            "description": "Scarlet sage is an annual flowering plant with bright red flowers and dark green foliage.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 85°F"
+            },
+            "nativeRegion": "Brazil",
+            "companionPlants": [
+                "Verbena",
+                "Petunia"
+            ],
+            "flowerColor": "Red",
+            "imageUrl": "https://example.com/scarlet-sage.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 13,
+            "botanicalName": "Lobelia erinus",
+            "name": "Lobelia",
+            "description": "Lobelia is a low-growing annual flower with delicate blue, purple, or white blooms.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Partial shade to full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "South Africa",
+            "companionPlants": [
+                "Impatiens",
+                "Caladium"
+            ],
+            "flowerColor": "Blue, purple, white",
+            "imageUrl": "https://example.com/lobelia.jpg",
+            "plantHeight": "6 to 12 inches"
+        }
+    ]
+}
