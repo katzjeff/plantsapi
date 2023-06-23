@@ -9,6 +9,7 @@ import allPlants from "./routes/allPlants.js";
 import singlePlant from "./routes/singlePlant.js";
 import searchPlants from "./routes/searchPlant.js";
 import createPlant from "./routes/createNewPlant.js";
+import deletePlant from "./routes/deletePlant.js";
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,6 +26,9 @@ app.use("/plants/", searchPlants);
 
 // Create a new plant
 app.use("/plants/", createPlant);
+
+//Delete plant or flower
+app.use("/plants/", deletePlant);
 
 // Handle errors for invalid routes
 app.use((req, res) => {
