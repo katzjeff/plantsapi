@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 dotenv.config();
+import authenticateUser from "./utils/middleware/authMiddleware.js";
 
 const port = process.env.PORT || 5000;
 
@@ -9,7 +10,7 @@ import allPlants from "./routes/allPlants.js";
 import singlePlant from "./routes/singlePlant.js";
 import searchPlants from "./routes/searchPlant.js";
 import createPlant from "./routes/createNewPlant.js";
-import updatePlant from "./routes/updatePlant.js"
+import updatePlant from "./routes/updatePlant.js";
 import deletePlant from "./routes/deletePlant.js";
 
 const app = express();
@@ -17,22 +18,22 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Get all plants
-app.use("/plants", allPlants);
+app.use("/plants", authenticateUser, allPlants);
 
 // Get a specific plant by ID
-app.use("/plants/", singlePlant);
+app.use("/plants/", authenticateUser, singlePlant);
 
 // Search plants by flower color, water requirements, native region, companion plants, or blooming times
-app.use("/plants/", searchPlants);
+app.use("/plants/", authenticateUser, searchPlants);
 
 // Create a new plant
-app.use("/plants/", createPlant);
+app.use("/plants/", authenticateUser, createPlant);
 
 //Update an entry
-app.use("/plants/", updatePlant);
+app.use("/plants/", authenticateUser, updatePlant);
 
 //Delete plant or flower
-app.use("/plants/", deletePlant);
+app.use("/plants/", authenticateUser, deletePlant);
 
 // Handle errors for invalid routes
 app.use((req, res) => {
