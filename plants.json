@@ -4,7 +4,7 @@
             "id": 1,
             "plantName": "Sunflower",
             "flowerColor": "Yellow",
-            "foodNutrients": "Pollen",
+            "foodNutrients": "Pollen, Necter",
             "waterRequirements": "Medium",
             "nativeRegion": "North America",
             "companionPlants": [
@@ -19,7 +19,8 @@
             "plantHeight": {
                 "cm": 180,
                 "in": 70
-            }
+            },
+            "foodNutrient": "Pollen, Necter"
         },
         {
             "id": 2,

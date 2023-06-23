@@ -9,6 +9,7 @@ import allPlants from "./routes/allPlants.js";
 import singlePlant from "./routes/singlePlant.js";
 import searchPlants from "./routes/searchPlant.js";
 import createPlant from "./routes/createNewPlant.js";
+import updatePlant from "./routes/updatePlant.js"
 import deletePlant from "./routes/deletePlant.js";
 
 const app = express();
@@ -26,6 +27,9 @@ app.use("/plants/", searchPlants);
 
 // Create a new plant
 app.use("/plants/", createPlant);
+
+//Update an entry
+app.use("/plants/", updatePlant);
 
 //Delete plant or flower
 app.use("/plants/", deletePlant);
