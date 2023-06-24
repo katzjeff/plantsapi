@@ -45,6 +45,7 @@ import fs from "fs";
 import { fileURLToPath } from "url";
 import path from "path";
 import bcrypt from "bcryptjs";
+import User from "../models/userModel.js";
 
 const router = Router();
 const __filename = fileURLToPath(import.meta.url);

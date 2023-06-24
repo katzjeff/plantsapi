@@ -23,5 +23,15 @@
     "email": "test3@demo.com",
     "userName": "demo2",
     "password": "$2a$10$8B7Q4kY4njD7uD4yTQEOnu3mJ1C3WCqYAIXc6G/x6ZiPagEpOBYOu"
+  },
+  {
+    "email": "test4@demo.com",
+    "userName": "demo2",
+    "password": "$2a$10$kZoA.gsxGeif92JWITz.Fu8cy8FWHw/pXYdA..V9gjwk1RkLw78UK"
+  },
+  {
+    "email": "test4demo.com",
+    "userName": "demo2",
+    "password": "$2a$10$chQ/.OOGWrKQcJQcmGLHj.uIo8AC29TztAVtWyrMS8p0TG3J7Bgai"
   }
 ]
