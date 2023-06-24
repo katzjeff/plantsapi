@@ -12,10 +12,14 @@ import searchPlants from "./routes/searchPlant.js";
 import createPlant from "./routes/createNewPlant.js";
 import updatePlant from "./routes/updatePlant.js";
 import deletePlant from "./routes/deletePlant.js";
+import userRoute from "./routes/userRoute.js"
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+//Create User
+app.use("/users", userRoute)
 
 // Get all plants
 app.use("/plants", authenticateUser, allPlants);
