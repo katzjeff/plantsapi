@@ -118,6 +118,18 @@
             "bloomingTimes": "Spring, Summer",
             "imageUrl": "https://example.com/blackeyedsusan.jpg",
             "plantHeight": "23-35cm"
+        },
+        {
+            "id": 10,
+            "plantName": "demo",
+            "flowerColor": "demo",
+            "foodNutrients": "pollen",
+            "waterRequirements": "demo",
+            "nativeRegion": "demo",
+            "companionPlants": "demo",
+            "bloomingTimes": "demo",
+            "imageUrl": "https://example.com/sunflower.jpg",
+            "plantHeight": "demo"
         }
     ]
 }
