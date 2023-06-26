@@ -23,8 +23,17 @@ app.use(bodyParser.json());
 //Connect to mongodb
 mongoose.connect(MongoDB);
 
+/** User Routes */
 //Create User
 app.use("/users", userRoute);
+
+//Update User details
+app.use("/users", userRoute);
+
+//Delete a users details
+app.use("/users", userRoute);
+
+/**Plant Routes */
 
 // Get all plants
 app.use("/plants", allPlants);
