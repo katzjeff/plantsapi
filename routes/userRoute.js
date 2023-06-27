@@ -3,6 +3,7 @@ import { Router } from "express";
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import User from "../models/userModel.js";
+import jwt from "jsonwebtoken";
 
 const router = Router();
 
@@ -57,9 +58,19 @@ router.post("/login", async (req, res, next) => {
         message: "Your authorization failed. Please try again.",
       });
     }
-
+    const token = jwt.sign(
+      {
+        email: user.email,
+        userId: user._id,
+      },
+      process.env.JWT_KEY,
+      {
+        expiresIn: "1h",
+      }
+    );
     res.status(200).json({
       message: "Authentication successful.You are signed in.",
+      token: token,
       user: {
         email: user.email,
         userName: user.userName,
@@ -76,9 +87,19 @@ router.post("/login", async (req, res, next) => {
 // Update user details route
 router.put("/:userId", async (req, res, next) => {
   try {
-    const { userId } = req.params;
+    // const { userId } = req.params;
     const { email, userName } = req.body;
+    const decodedToken = jwt.verify(
+      req.headers.authorization,
+      process.env.JWT_KEY
+    );
+    const userId = decodedToken.userId;
 
+    if (userId !== req.params.userId) {
+      return res.status(401).json({
+        message: "Authorization failed. Invalid user ID.",
+      });
+    }
     const updatedUser = await User.findByIdAndUpdate(
       userId,
       { email, userName },
@@ -109,7 +130,17 @@ router.put("/:userId", async (req, res, next) => {
 // Delete user route
 router.delete("/:userId", async (req, res, next) => {
   try {
-    const { userId } = req.params;
+    const decodedToken = jwt.verify(
+      req.headers.authorization,
+      process.env.JWT_KEY
+    );
+    const userId = decodedToken.userId;
+
+    if (userId !== req.params.userId) {
+      return res.status(401).json({
+        message: "Authorization failed. Invalid user ID.",
+      });
+    }
 
     const deletedUser = await User.findByIdAndRemove(userId);
 

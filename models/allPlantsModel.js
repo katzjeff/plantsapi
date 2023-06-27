@@ -9,7 +9,7 @@ const plantSchema = mongoose.Schema({
   companionPlants: { type: String, required: true },
   bloomingTimes: { type: String, required: true },
   imageUrl: { type: String, required: true },
-  plantHeight: { type: Number },
+  plantHeight: { type: String },
 });
 
 export default mongoose.models?.Plants || mongoose.model("Plants", plantSchema);
