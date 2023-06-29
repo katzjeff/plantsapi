@@ -47,8 +47,7 @@ export const createPlant = async (req, res) => {
 
     if (duplicatePlant) {
       return res.status(409).json({
-        error:
-          "A plant with similar features exists. Please check or create a new plant/flower.",
+        error: `${plantName},already exists. Please check or create a new plant/flower`,
       });
     }
 
