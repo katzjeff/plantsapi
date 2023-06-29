@@ -4,9 +4,12 @@ import Plant from "../models/allPlantsModel.js";
 export const createPlant = async (req, res) => {
   try {
     const {
+      botanicalName,
       plantName,
+      description,
       flowerColor,
       foodNutrients,
+      growthHabits,
       waterRequirements,
       nativeRegion,
       companionPlants,
@@ -17,9 +20,12 @@ export const createPlant = async (req, res) => {
 
     // Validate required fields
     if (
+      !botanicalName ||
       !plantName ||
+      !description ||
       !flowerColor ||
       !foodNutrients ||
+      !growthHabits ||
       !waterRequirements ||
       !nativeRegion ||
       !companionPlants ||
@@ -34,6 +40,7 @@ export const createPlant = async (req, res) => {
     const duplicatePlant = await Plant.findOne({
       plantName: { $regex: new RegExp(`^${plantName}$`, "i") },
       flowerColor: { $regex: new RegExp(`^${flowerColor}$`, "i") },
+      botanicalName: { $regex: new RegExp(`^${botanicalName}$`, "i") },
       waterRequirements: { $regex: new RegExp(`^${waterRequirements}$`, "i") },
       nativeRegion: { $regex: new RegExp(`^${nativeRegion}$`, "i") },
     });
@@ -48,9 +55,12 @@ export const createPlant = async (req, res) => {
     // Create the new plant
     const newPlant = new Plant({
       _id: new mongoose.Types.ObjectId(),
+      botanicalName,
       plantName,
+      description,
       flowerColor,
       foodNutrients,
+      growthHabits,
       waterRequirements,
       nativeRegion,
       companionPlants,
@@ -63,7 +73,7 @@ export const createPlant = async (req, res) => {
     const savedPlant = await newPlant.save();
     res.status(201).json({
       savedPlant,
-      message: `${plantName} has been created and saved to the database.`
+      message: `${plantName} has been created and saved to the database,with ID ${_id}.`,
     });
   } catch (error) {
     console.error(error);

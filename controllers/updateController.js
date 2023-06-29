@@ -33,7 +33,6 @@
 //   });
 // };
 
-
 import Plant from "../models/allPlantsModel.js";
 
 export const updatePlant = (req, res) => {
@@ -43,7 +42,11 @@ export const updatePlant = (req, res) => {
   Plant.findOneAndUpdate({ _id: plantId }, updatedPlant, { new: true })
     .then((updatedPlant) => {
       if (!updatedPlant) {
-        return res.status(404).json({ error: `The plant you requested with ID ${plantId}, has not be found. Please check your ID again.` });
+        return res
+          .status(404)
+          .json({
+            error: `The plant you requested with ID ${plantId}, has not be found. Please check your ID again.`,
+          });
       }
       res.json({
         message: `Plant with ID ${plantId} has been updated successfully.`,

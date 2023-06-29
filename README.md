@@ -37,9 +37,11 @@ Request:
 Method: GET
 Parameters: None
 
-### Response:
+### Response
+
 The API responds with a list of plants and flowers in a standardized format, providing essential details for each entry.
 Each plant/flower object may include information such as:
+
 - Botanical name: The scientific name of the plant or flower.
 - Common name: The popular or colloquial name by which the plant is known.
 - Description: A brief description or overview of the plant's characteristics and features.
