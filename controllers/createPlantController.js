@@ -47,7 +47,7 @@ export const createPlant = async (req, res) => {
 
     if (duplicatePlant) {
       return res.status(409).json({
-        error: `${plantName},already exists. Please check or create a new plant/flower`,
+        error: `${plantName} already exists. Please check or create a new plant/flower.`,
       });
     }
 
@@ -72,7 +72,7 @@ export const createPlant = async (req, res) => {
     const savedPlant = await newPlant.save();
     res.status(201).json({
       savedPlant,
-      message: `${plantName} has been created and saved to the database,with ID ${_id}.`,
+      message: `${plantName} has been created and saved to the database.`,
     });
   } catch (error) {
     console.error(error);
