@@ -28,11 +28,6 @@ mongoose.connect(MongoDB);
 //Create User
 app.use("/users", userRoute);
 
-//Update User details
-app.use("/users", userRoute);
-
-//Delete a users details
-app.use("/users", userRoute);
 
 
 /**Plant Routes */
