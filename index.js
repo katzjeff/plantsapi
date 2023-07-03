@@ -38,13 +38,13 @@ app.use("/plants/", singlePlant);
 app.use("/plants/", searchPlants);
 
 // Create a new plant
-app.use("/plants/", createPlant);
+app.use("/plants/", authenticateUser, createPlant);
 
 //Update a plant entry
-app.use("/plants/", updatePlant);
+app.use("/plants/", authenticateUser, updatePlant);
 
 //Delete plant or flower
-app.use("/plants/",authenticateUser, deletePlant);
+app.use("/plants/", authenticateUser, deletePlant);
 
 // Handle errors for invalid routes
 app.use((req, res) => {

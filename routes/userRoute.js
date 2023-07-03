@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import User from "../models/userModel.js";
 import jwt from "jsonwebtoken";
+import authenticateUser from "../utils/middleware/authMiddleware.js";
 
 const router = Router();
 
@@ -99,7 +100,7 @@ router.post("/signin", async (req, res, next) => {
 });
 
 // Update user details route
-router.put("/:userId", async (req, res, next) => {
+router.put("/:userId", authenticateUser, async (req, res, next) => {
   try {
     const userId = req.params.userId;
     const { email, userName, password } = req.body;
@@ -135,7 +136,7 @@ router.put("/:userId", async (req, res, next) => {
 });
 
 // Delete user route
-router.delete("/:userId", async (req, res, next) => {
+router.delete("/:userId", authenticateUser, async (req, res, next) => {
   try {
     const userId = req.params.userId;
     const deletedUser = await User.findByIdAndDelete(userId);
