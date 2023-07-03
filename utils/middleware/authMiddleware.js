@@ -1,21 +1,19 @@
 import jwt from "jsonwebtoken";
 
-const secretKey = process.env.SECRET_KEY
 const authenticateUser = (req, res, next) => {
-  const token = req.headers.authorization;
-
-  if (!token) {
-    return res
-      .status(401)
-      .json({ error: "You are note authorized. Token missing." });
-  }
   try {
-    const decoded = jwt.verify(token, secretKey);
+    const token = req.headers.authorization.split(" ")[1];
+    const decodedToken = jwt.verify(token, process.env.SECRET_KEY);
 
-    req.user = decoded.user;
-    next();
+    // Attach the decoded user information to the request object
+    req.userData = {
+      userId: decodedToken.userId,
+      userName: decodedToken.userName,
+    };
+
+    next(); // Allow access to the route
   } catch (error) {
-    return res.status(401).json({ error: "Unauthorized. Invalid token." });
+    return res.status(401).json({ error: "Unauthorized" });
   }
 };
 

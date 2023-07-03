@@ -7,15 +7,34 @@ import jwt from "jsonwebtoken";
 
 const router = Router();
 
+const generateToken = (user) => {
+  const payload = {
+    userId: user._id,
+    userName: user.userName,
+  };
+
+  const options = {
+    expiresIn: "1h", // Token expiration time
+  };
+
+  // Generate and return the token
+  return jwt.sign(payload, process.env.SECRET_KEY, options);
+};
+
+//Sign up user
 router.post("/signup", async (req, res, next) => {
   try {
     const { email, userName, password } = req.body;
+
+    // Check if the user already exists
     const existingUser = await User.findOne({ $or: [{ email }, { userName }] });
     if (existingUser) {
       return res.status(409).json({
         error: `User ${userName} is already registered.`,
       });
     }
+
+    // Create a new user
     const hash = await bcrypt.hash(password, 10);
     const user = new User({
       _id: new mongoose.Types.ObjectId(),
@@ -24,10 +43,15 @@ router.post("/signup", async (req, res, next) => {
       password: hash,
     });
 
-    const result = await user.save();
-    console.log(result);
+    const newUser = await user.save();
+
+    // Generate JWT token
+    const token = generateToken(newUser);
+
     res.status(201).json({
       message: `User ${userName} has been created successfully.`,
+      token: token,
+      user: newUser,
     });
   } catch (error) {
     console.log(error);
@@ -37,7 +61,7 @@ router.post("/signup", async (req, res, next) => {
   }
 });
 
-//Sign in user
+//Sign in a user route
 router.post("/signin", async (req, res, next) => {
   try {
     const { userName, password } = req.body;
@@ -58,8 +82,12 @@ router.post("/signin", async (req, res, next) => {
       });
     }
 
+    // Generate JWT token
+    const token = generateToken(existingUser);
+
     res.status(200).json({
       message: `User ${existingUser.userName} has been signed in successfully.`,
+      token: token,
       user: existingUser,
     });
   } catch (error) {
@@ -69,49 +97,6 @@ router.post("/signin", async (req, res, next) => {
     });
   }
 });
-
-// router.post("/login", async (req, res, next) => {
-//   try {
-//     const { email, password } = req.body;
-
-//     const user = await User.findOne({ email });
-//     if (!user) {
-//       return res.status(401).json({
-//         message: "Your authorization failed. Please try again.",
-//       });
-//     }
-
-//     const isPasswordValid = await bcrypt.compare(password, user.password);
-//     if (!isPasswordValid) {
-//       return res.status(401).json({
-//         message: "Your authorization failed. Please try again.",
-//       });
-//     }
-//     const token = jwt.sign(
-//       {
-//         email: user.email,
-//         userId: user._id,
-//       },
-//       process.env.JWT_KEY,
-//       {
-//         expiresIn: "1h",
-//       }
-//     );
-//     res.status(200).json({
-//       message: "Authentication successful.You are signed in.",
-//       token: token,
-//       user: {
-//         email: user.email,
-//         userName: user.userName,
-//       },
-//     });
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).json({
-//       error: error.message,
-//     });
-//   }
-// });
 
 // Update user details route
 router.put("/:userId", async (req, res, next) => {
