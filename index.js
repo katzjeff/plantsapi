@@ -3,7 +3,10 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
+
+//Middleware
 import authenticateUser from "./utils/middleware/authMiddleware.js";
+import { createdPlants } from "./utils/middleware/rateLimiter.js";
 
 const port = process.env.PORT || 5000;
 const MongoDB = process.env.MONGODB_URL;
@@ -38,13 +41,13 @@ app.use("/plants/", singlePlant);
 app.use("/plants/", searchPlants);
 
 // Create a new plant
-app.use("/plants/", authenticateUser, createPlant);
+app.use("/plants/", authenticateUser, createdPlants, createPlant);
 
 //Update a plant entry
-app.use("/plants/", authenticateUser, updatePlant);
+app.use("/plants/", authenticateUser, createdPlants, updatePlant);
 
 //Delete plant or flower
-app.use("/plants/", authenticateUser, deletePlant);
+app.use("/plants/", authenticateUser, createdPlants, deletePlant);
 
 // Handle errors for invalid routes
 app.use((req, res) => {

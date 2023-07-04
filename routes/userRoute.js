@@ -5,6 +5,7 @@ import bcrypt from "bcryptjs";
 import User from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 import authenticateUser from "../utils/middleware/authMiddleware.js";
+import { userLimiter } from "../utils/middleware/rateLimiter.js";
 
 const router = Router();
 
@@ -23,7 +24,7 @@ const generateToken = (user) => {
 };
 
 //Sign up user
-router.post("/signup", async (req, res, next) => {
+router.post("/signup", userLimiter, async (req, res, next) => {
   try {
     const { email, userName, password } = req.body;
 
@@ -63,7 +64,7 @@ router.post("/signup", async (req, res, next) => {
 });
 
 //Sign in a user route
-router.post("/signin", async (req, res, next) => {
+router.post("/signin", userLimiter, async (req, res, next) => {
   try {
     const { userName, password } = req.body;
 
@@ -100,62 +101,72 @@ router.post("/signin", async (req, res, next) => {
 });
 
 // Update user details route
-router.put("/:userId", authenticateUser, async (req, res, next) => {
-  try {
-    const userId = req.params.userId;
-    const { email, userName, password } = req.body;
+router.put(
+  "/:userId",
+  authenticateUser,
+  userLimiter,
+  async (req, res, next) => {
+    try {
+      const userId = req.params.userId;
+      const { email, userName, password } = req.body;
 
-    // Check if the user exists
-    const existingUser = await User.findById(userId);
-    if (!existingUser) {
-      return res.status(404).json({
-        error: `User not found.`,
+      // Check if the user exists
+      const existingUser = await User.findById(userId);
+      if (!existingUser) {
+        return res.status(404).json({
+          error: `User not found.`,
+        });
+      }
+
+      // Update user details
+      existingUser.email = email || existingUser.email;
+      existingUser.userName = userName || existingUser.userName;
+
+      if (password) {
+        const hash = await bcrypt.hash(password, 10);
+        existingUser.password = hash;
+      }
+
+      const updatedUser = await existingUser.save();
+      res.status(200).json({
+        message: `User ${updatedUser.userName} has been updated successfully.`,
+        user: updatedUser,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({
+        error: error.message,
       });
     }
-
-    // Update user details
-    existingUser.email = email || existingUser.email;
-    existingUser.userName = userName || existingUser.userName;
-
-    if (password) {
-      const hash = await bcrypt.hash(password, 10);
-      existingUser.password = hash;
-    }
-
-    const updatedUser = await existingUser.save();
-    res.status(200).json({
-      message: `User ${updatedUser.userName} has been updated successfully.`,
-      user: updatedUser,
-    });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({
-      error: error.message,
-    });
   }
-});
+);
 
 // Delete user route
-router.delete("/:userId", authenticateUser, async (req, res, next) => {
-  try {
-    const userId = req.params.userId;
-    const deletedUser = await User.findByIdAndDelete(userId);
+router.delete(
+  "/:userId",
+  authenticateUser,
+  userLimiter,
+  async (req, res, next) => {
+    try {
+      const userId = req.params.userId;
+      const deletedUser = await User.findByIdAndDelete(userId);
 
-    if (!deletedUser) {
-      return res.status(404).json({
-        error: `User not found.`,
+      if (!deletedUser) {
+        return res.status(404).json({
+          error: `User not found.`,
+        });
+      }
+
+      res.status(200).json({
+        message: `User ${deletedUser.userName} has been deleted successfully.`,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({
+        error: error.message,
       });
     }
-
-    res.status(200).json({
-      message: `User ${deletedUser.userName} has been deleted successfully.`,
-    });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({
-      error: error.message,
-    });
   }
-});
+);
 
 export default router;
