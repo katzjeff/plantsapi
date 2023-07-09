@@ -8,6 +8,9 @@ Developers and gardening enthusiasts can integrate our API into their applicatio
 
 The GARDEN API aims to empower users with reliable and up-to-date information, fostering sustainable gardening practices and contributing to the preservation of bee populations and ecosystem health. Whether it's designing a vibrant home garden, establishing a bee-friendly farm, or planning landscaping projects, our API is a valuable tool for anyone passionate about plants, flowers, and supporting pollinators.
 
+
+[APP DEMO-GARDEN APP API](https://www.figma.com/proto/9MR6tquniUxnLGa5HBhFWQ/GradenAPIMobile?type=design&node-id=0-3&t=e3YqukcWDBp0ULAS-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=21%3A17&mode=design)
+
 ## API Overview
 
 Our API provides several endpoints to meet your needs when working with plant and flower data:
