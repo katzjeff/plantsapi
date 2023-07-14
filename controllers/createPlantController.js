@@ -72,7 +72,7 @@ export const createPlant = async (req, res) => {
     const savedPlant = await newPlant.save();
     res.status(201).json({
       savedPlant,
-      message: `${plantName} has been created and saved to the database.`,
+      message: `${plantName} ,has been created and saved to the database.`,
     });
   } catch (error) {
     console.error(error);

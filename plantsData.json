@@ -293,6 +293,1172 @@
             "flowerColor": "Blue, purple, white",
             "imageUrl": "https://example.com/lobelia.jpg",
             "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 1,
+            "botanicalName": "Agastache foeniculum",
+            "name": "Blue Giant Hyssop",
+            "description": "Agastache foeniculum is a tall, upright perennial with blue, purple, or pink flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Lavender",
+                "Coneflower"
+            ],
+            "flowerColor": "Blue, purple, pink",
+            "imageUrl": "https://example.com/agastache-foeniculum.jpg",
+            "plantHeight": "3 to 5 feet"
+        },
+        {
+            "id": 2,
+            "botanicalName": "Allium schoenoprasum",
+            "name": "Chives",
+            "description": "Allium schoenoprasum is a low-growing perennial herb with edible leaves and flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "25°F to 85°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Carrots",
+                "Tomatoes"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/allium-schoenoprasum.jpg",
+            "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 3,
+            "botanicalName": "Aster novae-angliae",
+            "name": "New England Aster",
+            "description": "Aster novae-angliae is a tall, upright perennial with blue, purple, or white flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "35°F to 75°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-eyed Susan",
+                "Goldenrod"
+            ],
+            "flowerColor": "Blue, purple, white",
+            "imageUrl": "https://example.com/aster-novae-angliae.jpg",
+            "plantHeight": "3 to 5 feet"
+        },
+        {
+            "id": 1,
+            "botanicalName": "Achillea millefolium",
+            "name": "Yarrow",
+            "description": "Yarrow is a herbaceous perennial with clusters of small, aromatic flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring to summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Lavender",
+                "Echinacea"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/yarrow.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 2,
+            "botanicalName": "Agastache foeniculum",
+            "name": "Anise Hyssop",
+            "description": "Anise Hyssop is a perennial herb with purple flower spikes and a licorice-like aroma.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Bee Balm",
+                "Echinacea"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/anise_hyssop.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 3,
+            "botanicalName": "Asclepias tuberosa",
+            "name": "Butterfly Weed",
+            "description": "Butterfly Weed is a perennial flower with bright orange or yellow clusters of flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Purple Coneflower",
+                "Black-Eyed Susan"
+            ],
+            "flowerColor": "Orange, yellow",
+            "imageUrl": "https://example.com/butterfly_weed.jpg",
+            "plantHeight": "1 to 2 feet"
+        },
+        {
+            "id": 4,
+            "botanicalName": "Asclepias incarnata",
+            "name": "Swamp Milkweed",
+            "description": "Swamp Milkweed is a perennial plant with clusters of pink flowers that attract butterflies.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate to high",
+                "soilType": "Moist, well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Joe-Pye Weed",
+                "Bee Balm"
+            ],
+            "flowerColor": "Pink",
+            "imageUrl": "https://example.com/swamp_milkweed.jpg",
+            "plantHeight": "3 to 5 feet"
+        },
+        {
+            "id": 5,
+            "botanicalName": "Asclepias syriaca",
+            "name": "Common Milkweed",
+            "description": "Common Milkweed is a perennial plant with clusters of fragrant pink flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Purple Coneflower",
+                "Monarda"
+            ],
+            "flowerColor": "Pink",
+            "imageUrl": "https://example.com/common_milkweed.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 6,
+            "botanicalName": "Aster novae-angliae",
+            "name": "New England Aster",
+            "description": "New England Aster is a perennial flower with large, showy purple flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Late summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Goldenrod",
+                "Black-Eyed Susan"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/new_england_aster.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 7,
+            "botanicalName": "Asclepias curassavica",
+            "name": "Tropical Milkweed",
+            "description": "Tropical Milkweed is a perennial plant with bright red and yellow flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "South America",
+            "companionPlants": [
+                "Zinnia",
+                "Lantana"
+            ],
+            "flowerColor": "Red, yellow",
+            "imageUrl": "https://example.com/tropical_milkweed.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 8,
+            "botanicalName": "Buddleja davidii",
+            "name": "Butterfly Bush",
+            "description": "Butterfly Bush is a deciduous shrub with long, cone-shaped clusters of fragrant flowers.",
+            "growthHabits": "Shrub",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "China",
+            "companionPlants": [
+                "Coneflower",
+                "Black-Eyed Susan"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/butterfly_bush.jpg",
+            "plantHeight": "4 to 10 feet"
+        },
+        {
+            "id": 9,
+            "botanicalName": "Calendula officinalis",
+            "name": "Calendula",
+            "description": "Calendula is an annual or perennial flower with bright yellow or orange ray-like petals.",
+            "growthHabits": "Annual or perennial",
+            "floweringSeason": "Spring to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 70°F"
+            },
+            "nativeRegion": "Mediterranean region",
+            "companionPlants": [
+                "Lavender",
+                "Salvia"
+            ],
+            "flowerColor": "Yellow, orange",
+            "imageUrl": "https://example.com/calendula.jpg",
+            "plantHeight": "1 to 2 feet"
+        },
+        {
+            "id": 10,
+            "botanicalName": "Centaurea cyanus",
+            "name": "Cornflower",
+            "description": "Cornflower is an annual flower with distinctive blue, pink, or white petals.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Europe",
+            "companionPlants": [
+                "Bachelor's Button",
+                "Lavender"
+            ],
+            "flowerColor": "Blue, pink, white",
+            "imageUrl": "https://example.com/cornflower.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 11,
+            "botanicalName": "Cirsium vulgare",
+            "name": "Common Thistle",
+            "description": "Common Thistle is a biennial or perennial plant with purple or pink flowers and spiky leaves.",
+            "growthHabits": "Biennial or perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Europe",
+            "companionPlants": [
+                "Echinacea",
+                "Rudbeckia"
+            ],
+            "flowerColor": "Purple, pink",
+            "imageUrl": "https://example.com/common_thistle.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 12,
+            "botanicalName": "Cleome hassleriana",
+            "name": "Spider Flower",
+            "description": "Spider Flower is an annual or perennial plant with clusters of delicate, spidery flowers.",
+            "growthHabits": "Annual or perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 85°F"
+            },
+            "nativeRegion": "South America",
+            "companionPlants": [
+                "Zinnia",
+                "Cosmos"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/spider_flower.jpg",
+            "plantHeight": "3 to 5 feet"
+        },
+        {
+            "id": 13,
+            "botanicalName": "Lobelia erinus",
+            "name": "Lobelia",
+            "description": "Lobelia is a low-growing annual flower with delicate blue, purple, or white blooms.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Partial shade to full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "South Africa",
+            "companionPlants": [
+                "Impatiens",
+                "Caladium"
+            ],
+            "flowerColor": "Blue, purple, white",
+            "imageUrl": "https://example.com/lobelia.jpg",
+            "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 14,
+            "botanicalName": "Coreopsis lanceolata",
+            "name": "Lanceleaf Coreopsis",
+            "description": "Lanceleaf Coreopsis is a perennial flower with bright yellow, daisy-like blooms.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-Eyed Susan",
+                "Purple Coneflower"
+            ],
+            "flowerColor": "Yellow",
+            "imageUrl": "https://example.com/lanceleaf_coreopsis.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 15,
+            "botanicalName": "Cosmos bipinnatus",
+            "name": "Cosmos",
+            "description": "Cosmos is an annual flower with feathery foliage and colorful daisy-like flowers.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 85°F"
+            },
+            "nativeRegion": "Mexico",
+            "companionPlants": [
+                "Marigold",
+                "Zinnia"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/cosmos.jpg",
+            "plantHeight": "2 to 6 feet"
+        },
+        {
+            "id": 16,
+            "botanicalName": "Delphinium spp.",
+            "name": "Delphinium",
+            "description": "Delphinium is a perennial flower with tall spikes of vibrant blue, purple, pink, or white flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Larkspur",
+                "Phlox"
+            ],
+            "flowerColor": "Blue, purple, pink, white",
+            "imageUrl": "https://example.com/delphinium.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 17,
+            "botanicalName": "Echinacea purpurea",
+            "name": "Purple Coneflower",
+            "description": "Purple Coneflower is a perennial flower with distinctive purple petals and a raised cone-shaped center.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-Eyed Susan",
+                "Bee Balm"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/purple_coneflower.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 18,
+            "botanicalName": "Echinops ritro",
+            "name": "Globe Thistle",
+            "description": "Globe Thistle is a perennial plant with round, spiky flowers that are metallic blue or violet in color.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Salvia",
+                "Lavender"
+            ],
+            "flowerColor": "Blue, violet",
+            "imageUrl": "https://example.com/globe_thistle.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 19,
+            "botanicalName": "Eupatorium purpureum",
+            "name": "Joe-Pye Weed",
+            "description": "Joe-Pye Weed is a perennial plant with clusters of pink or purple flowers that attract butterflies.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Moist, well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Goldenrod",
+                "Swamp Milkweed"
+            ],
+            "flowerColor": "Pink, purple",
+            "imageUrl": "https://example.com/joe_pye_weed.jpg",
+            "plantHeight": "4 to 7 feet"
+        },
+        {
+            "id": 20,
+            "botanicalName": "Gaillardia spp.",
+            "name": "Blanket Flower",
+            "description": "Blanket Flower is a perennial flower with bright, daisy-like blooms in shades of red, orange, and yellow.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North and South America",
+            "companionPlants": [
+                "Black-Eyed Susan",
+                "Liatris"
+            ],
+            "flowerColor": "Red, orange, yellow",
+            "imageUrl": "https://example.com/blanket_flower.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 21,
+            "botanicalName": "Helianthus annuus",
+            "name": "Sunflower",
+            "description": "Sunflower is an annual plant with large, yellow flowers and edible seeds.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Zinnia",
+                "Cosmos"
+            ],
+            "flowerColor": "Yellow",
+            "imageUrl": "https://example.com/sunflower.jpg",
+            "plantHeight": "3 to 10 feet"
+        },
+        {
+            "id": 22,
+            "botanicalName": "Lavandula angustifolia",
+            "name": "Lavender",
+            "description": "Lavender is a perennial herb with aromatic purple flowers and silvery-green foliage.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Mediterranean region",
+            "companionPlants": [
+                "Rosemary",
+                "Sage"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/lavender.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 23,
+            "botanicalName": "Liatris spicata",
+            "name": "Blazing Star",
+            "description": "Blazing Star is a perennial plant with tall spikes of purple or white flowers that resemble bottle brushes.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-Eyed Susan",
+                "Goldenrod"
+            ],
+            "flowerColor": "Purple, white",
+            "imageUrl": "https://example.com/blazing_star.jpg",
+            "plantHeight": "2 to 5 feet"
+        },
+        {
+            "id": 24,
+            "botanicalName": "Monarda didyma",
+            "name": "Bee Balm",
+            "description": "Bee Balm is a perennial plant with clusters of tubular flowers in shades of red, pink, or purple.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Moist, well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Echinacea",
+                "Rudbeckia"
+            ],
+            "flowerColor": "Red, pink, purple",
+            "imageUrl": "https://example.com/bee_balm.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 25,
+            "botanicalName": "Nepeta cataria",
+            "name": "Catnip",
+            "description": "Catnip is a perennial herb with small, fragrant white or purple flowers and a strong attraction for cats.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary"
+            ],
+            "flowerColor": "White, purple",
+            "imageUrl": "https://example.com/catnip.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 26,
+            "botanicalName": "Oenothera spp.",
+            "name": "Evening Primrose",
+            "description": "Evening Primrose is a perennial plant with yellow, pink, or white flowers that open in the evening.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North and South America",
+            "companionPlants": [
+                "Coreopsis",
+                "Liatris"
+            ],
+            "flowerColor": "Yellow, pink, white",
+            "imageUrl": "https://example.com/evening_primrose.jpg",
+            "plantHeight": "1 to 4 feet"
+        },
+        {
+            "id": 27,
+            "botanicalName": "Papaver spp.",
+            "name": "Poppy",
+            "description": "Poppy is an annual or perennial flower with delicate, papery petals in shades of red, orange, pink, or white.",
+            "growthHabits": "Annual or perennial",
+            "floweringSeason": "Spring to summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Europe, Asia, Africa",
+            "companionPlants": [
+                "Lavender",
+                "Bachelor's Button"
+            ],
+            "flowerColor": "Red, orange, pink, white",
+            "imageUrl": "https://example.com/poppy.jpg",
+            "plantHeight": "1 to 4 feet"
+        },
+        {
+            "id": 28,
+            "botanicalName": "Penstemon spp.",
+            "name": "Penstemon",
+            "description": "Penstemon is a perennial flower with tubular, bell-shaped flowers in shades of red, pink, purple, or blue.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring to summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Liatris",
+                "Salvia"
+            ],
+            "flowerColor": "Red, pink, purple, blue",
+            "imageUrl": "https://example.com/penstemon.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 29,
+            "botanicalName": "Phlox paniculata",
+            "name": "Garden Phlox",
+            "description": "Garden Phlox is a perennial plant with fragrant clusters of flowers in shades of pink, purple, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Moist, well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Liatris",
+                "Coneflower"
+            ],
+            "flowerColor": "Pink, purple, white",
+            "imageUrl": "https://example.com/garden_phlox.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 30,
+            "botanicalName": "Rudbeckia hirta",
+            "name": "Black-Eyed Susan",
+            "description": "Black-Eyed Susan is a perennial flower with bright yellow or orange petals and a dark center.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Purple Coneflower",
+                "Bee Balm"
+            ],
+            "flowerColor": "Yellow, orange",
+            "imageUrl": "https://example.com/black_eyed_susan.jpg",
+            "plantHeight": "2 to 3 feet"
+        },
+        {
+            "id": 31,
+            "botanicalName": "Salvia officinalis",
+            "name": "Sage",
+            "description": "Sage is a perennial herb with aromatic gray-green leaves and small purple, blue, or white flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Mediterranean region",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary"
+            ],
+            "flowerColor": "Purple, blue, white",
+            "imageUrl": "https://example.com/sage.jpg",
+            "plantHeight": "1 to 2 feet"
+        },
+        {
+            "id": 32,
+            "botanicalName": "Scabiosa spp.",
+            "name": "Scabiosa",
+            "description": "Scabiosa is a perennial flower with pincushion-like blooms in shades of pink, purple, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Europe, Asia, Africa",
+            "companionPlants": [
+                "Lavender",
+                "Rudbeckia"
+            ],
+            "flowerColor": "Pink, purple, white",
+            "imageUrl": "https://example.com/scabiosa.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 33,
+            "botanicalName": "Tagetes spp.",
+            "name": "Marigold",
+            "description": "Marigold is an annual flower with vibrant yellow, orange, or red blooms.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 85°F"
+            },
+            "nativeRegion": "North and South America",
+            "companionPlants": [
+                "Zinnia",
+                "Cosmos"
+            ],
+            "flowerColor": "Yellow, orange, red",
+            "imageUrl": "https://example.com/marigold.jpg",
+            "plantHeight": "6 to 36 inches"
+        },
+        {
+            "id": 34,
+            "botanicalName": "Tanacetum parthenium",
+            "name": "Feverfew",
+            "description": "Feverfew is a perennial herb with small, daisy-like white or yellow flowers and feathery leaves.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary"
+            ],
+            "flowerColor": "White, yellow",
+            "imageUrl": "https://example.com/feverfew.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 35,
+            "botanicalName": "Thymus vulgaris",
+            "name": "Thyme",
+            "description": "Thyme is a perennial herb with small, fragrant leaves and tiny pink, purple, or white flowers.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Mediterranean region",
+            "companionPlants": [
+                "Lavender",
+                "Rosemary"
+            ],
+            "flowerColor": "Pink, purple, white",
+            "imageUrl": "https://example.com/thyme.jpg",
+            "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 36,
+            "botanicalName": "Verbena bonariensis",
+            "name": "Tall Verbena",
+            "description": "Tall Verbena is a perennial plant with clusters of small, lavender-purple flowers held above tall, slender stems.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "South America",
+            "companionPlants": [
+                "Salvia",
+                "Liatris"
+            ],
+            "flowerColor": "Lavender-purple",
+            "imageUrl": "https://example.com/tall_verbena.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 37,
+            "botanicalName": "Veronica spicata",
+            "name": "Speedwell",
+            "description": "Speedwell is a perennial plant with upright spikes of small flowers in shades of blue, pink, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Lavender",
+                "Salvia"
+            ],
+            "flowerColor": "Blue, pink, white",
+            "imageUrl": "https://example.com/speedwell.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 38,
+            "botanicalName": "Viola spp.",
+            "name": "Viola",
+            "description": "Viola is a perennial flower with delicate, five-petaled blooms in shades of purple, blue, yellow, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 75°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Lavender",
+                "Salvia"
+            ],
+            "flowerColor": "Purple, blue, yellow, white",
+            "imageUrl": "https://example.com/viola.jpg",
+            "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 39,
+            "botanicalName": "Zinnia elegans",
+            "name": "Zinnia",
+            "description": "Zinnia is an annual flower with a wide range of bright colors and various petal shapes.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "70°F to 90°F"
+            },
+            "nativeRegion": "North and South America",
+            "companionPlants": [
+                "Marigold",
+                "Cosmos"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/zinnia.jpg",
+            "plantHeight": "6 inches to 4 feet"
+        },
+        {
+            "id": 40,
+            "botanicalName": "Sedum spp.",
+            "name": "Stonecrop",
+            "description": "Stonecrop is a succulent perennial plant with fleshy leaves and clusters of star-shaped flowers in shades of pink, red, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 80°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Lavender",
+                "Sedum"
+            ],
+            "flowerColor": "Pink, red, white",
+            "imageUrl": "https://example.com/stonecrop.jpg",
+            "plantHeight": "4 inches to 2 feet"
+        },
+        {
+            "id": 41,
+            "botanicalName": "Aquilegia spp.",
+            "name": "Columbine",
+            "description": "Columbine is a perennial flower with distinctive bell-shaped flowers in various colors, often with contrasting petals and spurs.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring to summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Partial shade to full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 75°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Foxglove",
+                "Astilbe"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/columbine.jpg",
+            "plantHeight": "1 to 3 feet"
+        },
+        {
+            "id": 42,
+            "botanicalName": "Dianthus spp.",
+            "name": "Carnation",
+            "description": "Carnation is a perennial flower with ruffled petals and a spicy fragrance in shades of pink, red, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Europe, Asia, Africa",
+            "companionPlants": [
+                "Lavender",
+                "Salvia"
+            ],
+            "flowerColor": "Pink, red, white",
+            "imageUrl": "https://example.com/carnation.jpg",
+            "plantHeight": "1 to 2 feet"
+        },
+        {
+            "id": 43,
+            "botanicalName": "Nigella damascena",
+            "name": "Love-in-a-Mist",
+            "description": "Love-in-a-Mist is an annual flower with delicate, fern-like foliage and blue or white flowers surrounded by a ring of bracts.",
+            "growthHabits": "Annual",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Southern Europe, North Africa",
+            "companionPlants": [
+                "Larkspur",
+                "Poppy"
+            ],
+            "flowerColor": "Blue, white",
+            "imageUrl": "https://example.com/love_in_a_mist.jpg",
+            "plantHeight": "1 to 2 feet"
+        },
+        {
+            "id": 44,
+            "botanicalName": "Rosa spp.",
+            "name": "Rose",
+            "description": "Rose is a woody perennial with fragrant, showy flowers in various colors and a wide range of forms and sizes.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Lavender",
+                "Salvia"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/rose.jpg",
+            "plantHeight": "1 to 8 feet"
+        },
+        {
+            "id": 45,
+            "botanicalName": "Alcea rosea",
+            "name": "Hollyhock",
+            "description": "Hollyhock is a biennial or perennial plant with tall spikes of large, showy flowers in various colors.",
+            "growthHabits": "Biennial or perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Central and Southwest Asia",
+            "companionPlants": [
+                "Delphinium",
+                "Phlox"
+            ],
+            "flowerColor": "Various colors",
+            "imageUrl": "https://example.com/hollyhock.jpg",
+            "plantHeight": "3 to 8 feet"
+        },
+        {
+            "id": 46,
+            "botanicalName": "Anemone coronaria",
+            "name": "Poppy Anemone",
+            "description": "Poppy Anemone is a tuberous perennial plant with poppy-like flowers in shades of red, pink, purple, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Spring",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low",
+                "soilType": "Well-drained",
+                "tempRange": "50°F to 70°F"
+            },
+            "nativeRegion": "Mediterranean region",
+            "companionPlants": [
+                "Tulip",
+                "Daffodil"
+            ],
+            "flowerColor": "Red, pink, purple, white",
+            "imageUrl": "https://example.com/poppy_anemone.jpg",
+            "plantHeight": "6 to 12 inches"
+        },
+        {
+            "id": 47,
+            "botanicalName": "Delphinium spp.",
+            "name": "Delphinium",
+            "description": "Delphinium is a perennial plant with tall spikes of showy flowers in shades of blue, purple, pink, or white.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Northern Hemisphere",
+            "companionPlants": [
+                "Hollyhock",
+                "Larkspur"
+            ],
+            "flowerColor": "Blue, purple, pink, white",
+            "imageUrl": "https://example.com/delphinium.jpg",
+            "plantHeight": "3 to 6 feet"
+        },
+        {
+            "id": 48,
+            "botanicalName": "Echinacea purpurea",
+            "name": "Purple Coneflower",
+            "description": "Purple Coneflower is a perennial flower with distinctive purple petals and a raised cone-shaped center.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Black-Eyed Susan",
+                "Bee Balm"
+            ],
+            "flowerColor": "Purple",
+            "imageUrl": "https://example.com/purple_coneflower.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 49,
+            "botanicalName": "Echinops ritro",
+            "name": "Globe Thistle",
+            "description": "Globe Thistle is a perennial plant with round, spiky flowers that are metallic blue or violet in color.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun",
+                "waterRequirements": "Low to moderate",
+                "soilType": "Well-drained",
+                "tempRange": "60°F to 75°F"
+            },
+            "nativeRegion": "Europe, Asia",
+            "companionPlants": [
+                "Salvia",
+                "Lavender"
+            ],
+            "flowerColor": "Blue, violet",
+            "imageUrl": "https://example.com/globe_thistle.jpg",
+            "plantHeight": "2 to 4 feet"
+        },
+        {
+            "id": 50,
+            "botanicalName": "Eupatorium purpureum",
+            "name": "Joe-Pye Weed",
+            "description": "Joe-Pye Weed is a perennial plant with clusters of pink or purple flowers that attract butterflies.",
+            "growthHabits": "Perennial",
+            "floweringSeason": "Summer to fall",
+            "growingRequirements": {
+                "sunlightRequirements": "Full sun to partial shade",
+                "waterRequirements": "Moderate",
+                "soilType": "Moist, well-drained",
+                "tempRange": "65°F to 85°F"
+            },
+            "nativeRegion": "North America",
+            "companionPlants": [
+                "Goldenrod",
+                "Swamp Milkweed"
+            ],
+            "flowerColor": "Pink, purple",
+            "imageUrl": "https://example.com/joe_pye_weed.jpg",
+            "plantHeight": "4 to 7 feet"
         }
     ]
 }
