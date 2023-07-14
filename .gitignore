@@ -3,3 +3,6 @@ node_modules
 TIMELINE.md
 assets
 test
+plants.json
+plantsData.json
+tests
