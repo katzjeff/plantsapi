@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 const plantSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  botanicalName: { type: String, required: true, minlength: 2, maxlength: 100 },
-  plantName: { type: String, required: true, minlength: 2, maxlength: 100 },
+  botanicalName: { type: String, required: true, minlength: 2, maxLength: 100 },
+  plantName: { type: String, required: true, minlength: 2, maxLength: 100 },
   description: { type: String, require: true },
   flowerColor: { type: String, require: true },
   foodNutrients: { type: String, require: true },
