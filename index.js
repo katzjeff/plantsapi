@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 //Middleware
-import { createdPlants } from "./utils/middleware/rateLimiter.js";
+import { createdPlants, deletePlants } from "./utils/middleware/rateLimiter.js";
 
 const port = process.env.PORT || 5000;
 const MongoDB = process.env.MONGODB_URL;
@@ -43,7 +43,7 @@ app.use("/plants/",createdPlants, createPlant);
 app.use("/plants/", createdPlants, updatePlant);
 
 //Delete plant or flower
-app.use("/plants/", createdPlants, deletePlant);
+app.use("/plants/", deletePlants, deletePlant);
 
 // Handle errors for invalid routes
 app.use((req, res) => {
