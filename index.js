@@ -17,14 +17,12 @@ import createPlant from "./routes/createNewPlant.js";
 import updatePlant from "./routes/updatePlant.js";
 import deletePlant from "./routes/deletePlant.js";
 
-
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //Connect to mongodb
 mongoose.connect(MongoDB);
-
 
 /**Plant Routes */
 // Get all plants
@@ -37,7 +35,7 @@ app.use("/plants/", singlePlant);
 app.use("/plants/", searchPlants);
 
 // Create a new plant
-app.use("/plants/",createdPlants, createPlant);
+app.use("/plants/", createdPlants, createPlant);
 
 //Update a plant entry
 app.use("/plants/", createdPlants, updatePlant);
