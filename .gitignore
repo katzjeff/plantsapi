@@ -6,3 +6,5 @@ test
 plants.json
 plantsData.json
 tests
+userRoute.js
+userModel.js
