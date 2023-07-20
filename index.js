@@ -5,7 +5,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 //Middleware
-// import authenticateUser from "./utils/middleware/authMiddleware.js";
 import { createdPlants } from "./utils/middleware/rateLimiter.js";
 
 const port = process.env.PORT || 5000;
@@ -17,7 +16,7 @@ import searchPlants from "./routes/searchPlant.js";
 import createPlant from "./routes/createNewPlant.js";
 import updatePlant from "./routes/updatePlant.js";
 import deletePlant from "./routes/deletePlant.js";
-import userRoute from "./routes/userRoute.js";
+
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -26,9 +25,6 @@ app.use(bodyParser.json());
 //Connect to mongodb
 mongoose.connect(MongoDB);
 
-/** User Routes */
-//Create User
-app.use("/users", userRoute);
 
 /**Plant Routes */
 // Get all plants
